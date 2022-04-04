@@ -9,7 +9,10 @@ function App() {
   return (
     <div>
       <h1>Hello World let do { count }</h1>
-      <button onClick={() => console.log("click")}>Addition</button>
+      <button 
+      onClick={() => {console.log("click"); 
+      setCount( (currValue) => {return currValue + 1})}}>Addition
+      </button>
     </div>
   );
 }
