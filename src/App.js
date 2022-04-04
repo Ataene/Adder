@@ -18,7 +18,7 @@ function App() {
       </button>
 
       <Displayer value={count2} />
-      <Adder />
+      <Adder theFunction={ setCount2 }/>
     </div>
   );
 }

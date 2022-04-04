@@ -1,8 +1,13 @@
 import React from 'react'
 
-const Adder = () => {
+const Adder = (props) => {
+
+    myProps = props.theFunction;
   return (
-    <div>Adder</div>
+    <div>
+    <button onClick={ (curr) => {myProps + 1 }}>Click
+    </button>
+    </div>
   )
 }
 
